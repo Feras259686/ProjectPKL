@@ -1,4 +1,3 @@
-<!-- buat koneksi php -->
 <?php
 $host = "localhost";
 $username = "root";

@@ -11,16 +11,9 @@ if (isset($_POST['submit'])) {
    header("Location: kategori.php");
 }
 ?>
-
 <div class="container-fluid">
-   <div class="row">
-      <!-- Sidebar -->
-      <div class="col-md-3 d-none d-md-block">
-         <!-- Sidebar content sudah otomatis ter-load dari SBAdmin -->
-      </div>
-
-      <!-- Main Content -->
-      <div class="col-md-9">
+   <div class="row justify-content-center">
+      <div class="col-lg-8">
          <!-- Page Heading -->
          <h1 class="h3 mb-4 text-gray-800 text-center">Kategori</h1>
 
@@ -68,10 +61,10 @@ if (isset($_POST['submit'])) {
                         $result = mysqli_query($koneksi, "SELECT * FROM tb_kategori");
                         while ($row = mysqli_fetch_assoc($result)) {
                            echo "<tr>
-                                            <td>{$row['kategori_id']}</td>
-                                            <td>{$row['kategori_nama']}</td>
-                                            <td>{$row['deskripsi']}</td>
-                                          </tr>";
+                                          <td>{$row['kategori_id']}</td>
+                                          <td>{$row['kategori_nama']}</td>
+                                          <td>{$row['deskripsi']}</td>
+                                        </tr>";
                         }
                         ?>
                      </tbody>
@@ -82,5 +75,4 @@ if (isset($_POST['submit'])) {
       </div>
    </div>
 </div>
-
 <?php include 'templates/footer.php'; ?>

@@ -1,5 +1,5 @@
 <?php
-include 'templates/header.php';
+include 'templates/sidebar.php';
 include 'koneksi.php';
 
 // Proses tambah data kategori

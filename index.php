@@ -1,4 +1,4 @@
-<?php include 'templates/header.php'; ?>
+<?php include 'templates/sidebar.php'; ?>
 <div class="container-fluid">
    <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
    <div class="row">
